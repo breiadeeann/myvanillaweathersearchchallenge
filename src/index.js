@@ -10,8 +10,6 @@ function updateWeather(response) {
     "#weather-app-temperature-icon"
   );
 
-  console.log(response.data);
-
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
